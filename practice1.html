@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+   this is test.
+   <br> 
+    <script>
+        let a = 10;
+        a.x = 10;
+        console.log(a.x); //옳지 않은 문법형태, 식별불가가 뜸
+        let myObj = {};  //중괄호가 있으면 객체를 의미
+        myObj.a = 3;
+        myObj.b = 20;
+        myObj.c = 7;
+        delete myObj.c;
+        for(key in myObj){
+            document.write('key:'+key+'=>'+myObj[key]+'<br/>');
+        }
+        //const{PI}=Math; 중괄호가 있으며 익명객체를 선언하고 초기화, 근데 동작이 댐;;
+        const PI = Math.PI; //변수를 선언하면서 초기화
+        
+        console.log(PI);
+
+        console.log(myObj.a);
+        console.log(myObj['a']);
+        console.log(myObj['b']);
+
+
+        let date = new Date(); //date를 새로 생성해서 할당
+        document.write('현재 날짜 : ' + date + '<br>')
+    </script>
+  </body>
+</html>

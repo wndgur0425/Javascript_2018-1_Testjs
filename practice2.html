@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My test page</title>
+  </head>
+  <body>
+      this is a just test.
+      <script>
+          let myFun = function /*함수이름*/ (s1, s2){ //익명함수, 함수이름이 없어도 결과가 나온다.
+              return s1+s2;
+          };
+          let myVar = myFun('abc','123');
+          console.log(myVar);
+          
+          let myFun1 = (s3,s4) => s3 + s4;
+          let myVar1 = myFun1('abc','123');
+          console.log(myVar1);
+
+          //////////////////////////////////////
+
+          function Constructor(){}
+          let myFuns = constructor; //단순 함수
+          let myObj = new Constructor(); //new는 객체일때만 사용가능, 입력을 넣어주어 Constructor를 호출, 넘버 문자는 no
+
+
+          </script>
+  </body>
+</html>
